@@ -1,10 +1,147 @@
 body {
   margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
+.wrap {
+  width: 1200px;
+}
+
 .header {
   padding: 24px;
 }
+
 .header > h1 {
   margin: 0;
   text-align: center;
+  padding: 16px 0;
+}
+
+.search_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.select_wrap {
+  display: flex;
+  gap: 12px;
+}
+
+.input_wrap {
+  display: flex;
+  gap: 12px;
+  max-width: fit-content;
+}
+
+.input_wrap input {
+  padding: 8px 4px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input_wrap input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(22, 132, 241, 0.2);
+}
+
+.button {
+  background-color: #2a6ad1;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button.reset {
+  background-color: #8f8f8f;
+  color: #fff;
+}
+
+.button.reset:hover {
+  transform: translateY(-2px);
+}
+
+.subject_title_list,
+.subject_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.subject_title_list {
+  background-color: #fffd92;
+  padding: 12px 0;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+}
+
+.subject_list {
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 0;
+}
+
+.subject_title_list > li,
+.subject_list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sub_no {
+  width: 10%;
+}
+.sub_title {
+  width: 50%;
+}
+.sub_instructor {
+  width: 10%;
+}
+.sub_category {
+  width: 10%;
+}
+.sub_level {
+  width: 10%;
+}
+.sub_count {
+  width: 10%;
+}
+
+.level_easy,
+.level_mid,
+.level_hard {
+  padding: 4px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.level_easy {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+.level_mid {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+.level_hard {
+  background-color: #ffebee;
+  color: #c62828;
 }
